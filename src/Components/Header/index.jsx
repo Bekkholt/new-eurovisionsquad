@@ -18,7 +18,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 function Header() {
   return (
     <div>
-    <Navbar className="bg-primary">
+    <Navbar className="bg-primary p-2">
         <Nav>
           <Nav.Link href="#action2"><FacebookIcon/></Nav.Link>
           <Nav.Link href="#action2"><XIcon/></Nav.Link>
@@ -35,8 +35,8 @@ function Header() {
       <img
           alt="Eurovisionsquad icon"
           src={Icon}
-          height={60}
-          width={60}
+          height={45}
+          width={45}
         ></img>
         </Nav.Link>
         <Navbar.Toggle aria-controls="navbarScroll" />
