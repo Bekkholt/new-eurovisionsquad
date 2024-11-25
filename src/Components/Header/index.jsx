@@ -2,6 +2,13 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../../App.scss';
 import Icon from '../../Images/eurovisionsquad_icon.png';
 import Logo from '../../Images/eurovisionsquad_logo.png';
+import FacebookIcon from '../Icons/Facebook';
+import XIcon from '../Icons/X';
+import InstaIcon from '../Icons/Instagram';
+import YouTubeIcon  from '../Icons/YouTube';
+import TwitchIcon from '../Icons/Twitch';
+import TiktokIcon from '../Icons/TikTok';
+import DiscordIcon from '../Icons/Discord';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -12,25 +19,16 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 function Header() {
   return (
     <div>
-    <Navbar expand="lg" className="bg-primary">
-    <Container fluid>
-      <Navbar.Toggle aria-controls="navbarScroll" />
-      <Navbar.Collapse id="navbarScroll">
-        <Nav
-          className="me-auto my-2 my-lg-0"
-          style={{ maxHeight: '100px' }}
-          navbarScroll
-        >
-          <Nav.Link href="#action2">FB</Nav.Link>
-          <Nav.Link href="#action2">X</Nav.Link>
-          <Nav.Link href="#action2">Insta</Nav.Link>
-          <Nav.Link href="#action2">YT</Nav.Link>
-          <Nav.Link href="#action2">Twitch</Nav.Link>
-          <Nav.Link href="#action2">TikTok</Nav.Link>
-          <Nav.Link href="#action2">Discord</Nav.Link>
+    <Navbar className="bg-primary">
+        <Nav>
+          <Nav.Link href="#action2"><FacebookIcon/></Nav.Link>
+          <Nav.Link href="#action2"><XIcon/></Nav.Link>
+          <Nav.Link href="#action2"><InstaIcon/></Nav.Link>
+          <Nav.Link href="#action2"><YouTubeIcon/></Nav.Link>
+          <Nav.Link href="#action2"><TwitchIcon/></Nav.Link>
+          <Nav.Link href="#action2"><TiktokIcon/></Nav.Link>
+          <Nav.Link href="#action2"><DiscordIcon/></Nav.Link>
         </Nav>
-      </Navbar.Collapse>
-    </Container>
   </Navbar>
     <Navbar expand="lg">
       <Container fluid>
@@ -72,8 +70,8 @@ function Header() {
     <img
           alt="Eurovisionsquad logo"
           src={Logo}
-          height={200}
-          width={600}
+          height={100}
+          width={300}
         ></img>
         </div>
     </div>
