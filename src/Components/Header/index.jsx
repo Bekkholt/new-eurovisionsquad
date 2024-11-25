@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '../../App.scss';
 import Icon from '../../Images/eurovisionsquad_icon.png';
+import Logo from '../../Images/eurovisionsquad_logo.png';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -67,6 +68,14 @@ function Header() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    <div className='d-flex justify-content-around mt-2'>
+    <img
+          alt="Eurovisionsquad logo"
+          src={Logo}
+          height={200}
+          width={600}
+        ></img>
+        </div>
     </div>
   );
 }
