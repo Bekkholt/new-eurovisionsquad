@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '../../App.scss';
+import Icon from '../../Images/eurovisionsquad_icon.png';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -32,7 +33,14 @@ function Header() {
   </Navbar>
     <Navbar expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Nav.Link href='/'>
+      <img
+          alt="Eurovisionsquad icon"
+          src={Icon}
+          height={60}
+          width={60}
+        ></img>
+        </Nav.Link>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -40,12 +48,12 @@ function Header() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action2">Om oss</Nav.Link>
+            <Nav.Link href="../../Pages/Om oss">Om oss</Nav.Link>
             <NavDropdown title="Deltakere" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">2025</NavDropdown.Item>
+              <NavDropdown.Item href="../../Pages/Deltakere">2025</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#action2">Kalender</Nav.Link>
-            <Nav.Link href="#action2">Kontakt</Nav.Link>
+            <Nav.Link href="../../Pages/Kalender">Kalender</Nav.Link>
+            <Nav.Link href="../../Pages/Kontakt">Kontakt</Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
@@ -54,7 +62,7 @@ function Header() {
               className="me-2"
               aria-label="Søk"
             />
-            <Button variant="outline-success">Søk</Button>
+            <Button variant="outline-primary">Søk</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
