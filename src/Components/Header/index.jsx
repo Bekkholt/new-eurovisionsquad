@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import '../../App.scss';
 import Icon from '../../Images/eurovisionsquad_icon.png';
-import Logo from '../../Images/eurovisionsquad_logo.png';
 import FacebookIcon from '../Icons/Facebook';
 import XIcon from '../Icons/X';
 import InstaIcon from '../Icons/Instagram';
@@ -66,14 +65,6 @@ function Header() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    <div className='d-flex justify-content-around mt-2'>
-    <img
-          alt="Eurovisionsquad logo"
-          src={Logo}
-          height={100}
-          width={300}
-        ></img>
-        </div>
     </div>
   );
 }
