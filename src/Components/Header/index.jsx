@@ -17,7 +17,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Header() {
   return (
-    <div>
+    <div className="sticky-top">
     <Navbar className="bg-primary p-2">
         <Nav>
           <Nav.Link href="#action2"><FacebookIcon/></Nav.Link>
@@ -29,7 +29,7 @@ function Header() {
           <Nav.Link href="#action2"><DiscordIcon/></Nav.Link>
         </Nav>
   </Navbar>
-    <Navbar expand="lg">
+    <Navbar expand="lg" className='p-2'>
       <Container fluid>
         <Nav.Link href='/'>
       <img
@@ -43,7 +43,7 @@ function Header() {
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
+            style={{ maxHeight: '120px' }}
             navbarScroll
           >
             <Nav.Link href="../../Pages/Om oss">Om oss</Nav.Link>
