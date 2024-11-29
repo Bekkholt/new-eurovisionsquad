@@ -34,9 +34,9 @@ export default function Home() {
         </Card.Body>
       </Card>
       </div>
-      <div className='d-flex justify-content-around p-4'>
+      <div className='d-flex justify-content-around flex-wrap'>
     <div>
-    <Card style={{ width: '18rem' }}>
+    <Card className='m-4' style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
@@ -49,7 +49,7 @@ export default function Home() {
     </Card>
     </div>
     <div>
-    <Card style={{ width: '18rem' }}>
+    <Card className='m-4' style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
@@ -62,7 +62,7 @@ export default function Home() {
     </Card>
     </div>
     <div>
-    <Card style={{ width: '18rem' }}>
+    <Card className='m-4' style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
